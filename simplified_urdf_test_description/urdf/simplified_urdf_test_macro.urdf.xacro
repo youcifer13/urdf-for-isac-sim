@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<robot name="simplified_urdf_test" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:macro name="simplified_urdf_test" params="prefix">
+
+<xacro:include filename="$(find simplified_urdf_test_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find simplified_urdf_test_description)/urdf/simplified_urdf_test.trans" />
+<xacro:include filename="$(find simplified_urdf_test_description)/urdf/simplified_urdf_test.gazebo" />
+<link name="${prefix}base_link"/>
+</xacro:macro>
+</robot>
